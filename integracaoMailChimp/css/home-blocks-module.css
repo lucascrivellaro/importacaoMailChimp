@@ -1,0 +1,70 @@
+.home-blocks-module {
+     border: 0px none;
+     display: block;
+     height: 395px;
+     margin: 0px auto;
+     position: relative;
+     width: 960px;
+}
+
+.home-blocks-module a:link {
+     color: #FFFFFF;
+     display: block;
+     padding: 0px 30px;
+     text-decoration: none;
+}
+
+.home-divs-module .block1, .home-divs-module .block2, .home-divs-module .block3, .home-divs-module .block4, .home-divs-module .block5, .home-divs-module .block6 {
+     float: left;
+     height: 190px;
+     margin-bottom: 15px;
+     vertical-align: middle;
+     width: 310px;
+}
+
+.hover-background {
+     background-color: rgba(191, 214, 48, 0.9);
+     height: 100%;
+     margin-top: 0px;
+     opacity: 0;
+     vertical-align: middle;
+     width: 100%;
+}
+
+.hover-background h4 {
+     font-family: Arial,Helvetica,sans-serif;
+     font-size: 35px;
+     font-weight: normal;
+     line-height: 30px;
+     margin: 0px auto;
+     padding: 65px 0px 0px;
+     text-align: center;
+     text-transform: uppercase;
+     width: 220px;
+}
+
+.block1 {
+     background: url("../../../images/home-blocks/bl1.png") repeat scroll 0% 0% transparent;
+}
+
+.block2 {
+     background: url("../../../images/home-blocks/bl2.png") repeat scroll 0% 0% transparent;
+     margin: 0px 15px;
+}
+
+.block3 {
+     background: url("../../../images/home-blocks/bl3.png") repeat scroll 0% 0% transparent;
+}
+
+.block4 {
+     background: url("../../../images/home-blocks/bl4.png") repeat scroll 0% 0% transparent;
+}
+
+.block5 {
+     background: url("../../../images/home-blocks/bl5.png") repeat scroll 0% 0% transparent;
+     margin: 0px 15px;
+}
+
+.block6 {
+     background: url("../../../images/home-blocks/bl6.png") repeat scroll 0% 0% transparent;
+}

@@ -1,0 +1,683 @@
+.CampoForm{
+	border: medium none;
+	margin: 0 0 5px;
+	padding: 5px;
+	width: 300px;	
+}
+
+
+body {
+     background: url("../images/site-bg.jpg") repeat-x scroll 0px 0px #FFFFFF;
+     color: #1B0101;
+     font-family: Arial,Helvetica,sans-serif;
+     font-size: 14px;
+     margin: 0px;
+     padding: 0px;
+}
+
+@font-face {
+  font-family: "peraltaregular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/peralta-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/peralta-regular-webfont.woff") format("woff"), url("../fonts/peralta-regular-webfont.ttf") format("truetype"), url("../fonts/peralta-regular-webfont.svg#peraltaregular") format("svg");
+}
+
+h6, h5, h4, h3, h2, h1 {
+     clear: both;
+     display: block;
+     font-family: peraltaregular,Arial,Helvetica,sans-serif;
+     font-style: normal;
+     font-weight: normal;
+     line-height: 100%;
+     margin: 0px 0px 20px;
+     padding: 0px;
+     width: 100%;
+}
+
+h1 {
+     color: #212121;
+     font-size: 38px;
+}
+
+h2 {
+     border-bottom: 0px none;
+     color: #1B0101;
+     font-size: 32px;
+     padding: 30px 0px;
+}
+
+h3 {
+     color: #180000;
+     font-size: 20px;
+}
+
+h4 {
+     color: #F9A647;
+     font-size: 22px;
+}
+
+h5 {
+     font-size: 16px;
+     font-weight: bold;
+     margin: 0px 0px 10px;
+}
+
+p {
+     margin: 0px 0px 5px;
+}
+
+a:focus, a:hover {
+     color: #666666;
+     text-decoration: underline;
+}
+
+a, a:link, a:active, a:visited {
+     color: #D11D1D;
+     cursor: pointer;
+     font-weight: bold;
+     text-decoration: underline;
+}
+
+ul {
+     list-style: disc outside none;
+     padding-left: 20px;
+}
+
+ul li {
+     list-style: disc outside none;
+     margin: 0px 0px 5px;
+}
+
+hr {
+     border-color: #E8E8E8;
+}
+
+#container {
+     height: 100%;
+     margin: 0px auto;
+     position: relative;
+     width: 960px;
+}
+
+button, textarea, input {
+     background: none repeat scroll 0px 0px #FFFFFF;
+     border: medium none;
+}
+
+#footer-sitemap #container .custom {
+     float: left;
+     padding: 30px 0px;
+     position: relative;
+     width: 635px;
+}
+
+.moduletable {
+     padding: 0px;
+}
+
+#menusearch {
+     background: none repeat scroll 0% 0% transparent;
+     border-bottom: medium none;
+     float: left;
+     height: 40px;
+     margin: 0px auto;
+     position: relative;
+     width: 690px;
+     z-index: 999;
+}
+
+#menusearch #container {
+     width: 960px;
+}
+
+#header {
+     background: url("../images/header-bg.png") repeat-x scroll 0px 0px transparent;
+     height: 85px;
+     padding: 0px;
+     position: relative;
+     width: 100%;
+}
+
+#header #container {
+     background: none repeat scroll 0% 0% transparent;
+}
+
+#headerlogo {
+     background: none repeat scroll 0px 0px transparent;
+     float: left;
+     height: 80px;
+     left: 0px;
+     position: relative;
+     top: 0px;
+     width: 270px;
+     z-index: 998;
+}
+
+#headerlogo h1 {
+     background: none repeat scroll 0px 0px transparent;
+     font-weight: 400;
+     margin: 0px;
+     padding: 0px;
+}
+
+#headerlogo p {
+     margin: 0px;
+     padding: 0px;
+}
+
+#header h1 a:hover, #header h1 a:visited, #header h1 a:link, #header h1 a {
+     color: #FFFFFF;
+     font-size: 0px;
+}
+
+#redes {
+     font-size: 11px;
+     height: 35px;
+     position: absolute;
+     right: 305px;
+     text-align: right;
+     top: 66px;
+     width: 325px;
+}
+
+#languages {
+     position: absolute;
+     right: 0px;
+     text-align: right;
+     top: 50px;
+     width: 100px;
+     z-index: 999;
+}
+
+#redes p {
+     text-align: right;
+}
+
+#redes img {
+     margin: 0px 3px;
+}
+
+#search {
+     background: url("../images/search-bg.png") no-repeat scroll 0px 0px transparent;
+     border: medium none;
+     height: 34px;
+     padding: 0px 3px;
+     position: absolute;
+     right: 0px;
+     top: 65px;
+     width: 275px;
+     z-index: 998;
+}
+
+#search .finder input {
+     background: none repeat scroll 0px 0px transparent;
+     border: 0px none;
+     height: 22px;
+     padding: 5px;
+}
+
+#search .finder button {
+     background: none repeat scroll 0px 0px transparent;
+     border-radius: 0px 0px 0px 0px;
+     cursor: pointer;
+     float: right;
+     font-size: 0px;
+     height: 32px;
+     margin: 0px;
+     padding: 0px;
+     width: 40px;
+}
+
+#frontbanner {
+     background: none repeat scroll 0% 0% transparent;
+     height: 350px;
+     margin: 0px auto;
+     position: relative;
+     width: 100%;
+     z-index: 995;
+}
+
+#frontbanner #container {
+     background: none repeat scroll 0px 0px transparent;
+     height: 350px;
+     padding: 0px;
+     position: relative;
+}
+
+.frontbanner-right-top ul li a:hover {
+     color: #FFFFFF;
+}
+
+.icon2 {
+     background-position: 13px -27px;
+}
+
+.icon3 {
+     background-position: 13px -56px;
+}
+
+.acymailing_module_form .acymailing_introtext {
+     color: #FFFFFF;
+     display: block;
+     font-size: 12px;
+     font-style: normal;
+     font-weight: bold;
+     margin: 5px 0px;
+     padding-bottom: 10px;
+}
+
+table.acymailing_form {
+     border: 0px none ! important;
+     margin: 0px;
+     width: 100%;
+}
+
+.acymailing_module_form td {
+     padding: 0px ! important;
+}
+
+table.acymailing_form input {
+     border-radius: 0px 0px 0px 0px;
+     border: 0px none;
+     float: right;
+     margin: 0px 0px 5px;
+     padding: 8px 3px;
+}
+
+.acymailing_form .acysubbuttons input.button {
+     background: none repeat scroll 0px 0px #2C2C2C;
+     border-radius: 0px 0px 0px 0px;
+     border: 0px none;
+     color: #FFFFFF;
+     cursor: pointer;
+     float: right;
+     font-size: 11px;
+     font-weight: bold;
+     height: auto;
+     padding: 7px;
+     text-transform: uppercase;
+     width: 50%;
+}
+
+#top-content {
+     background: none repeat scroll 0px 0px transparent;
+     display: block;
+     margin: 35px 0px;
+     padding: 0px;
+     position: relative;
+     top: 0px;
+}
+
+#top-content h3 {
+     font-size: 22px;
+     margin: 0px;
+}
+
+#top-content p {
+     margin: 0px 0px 5px;
+     text-align: left;
+}
+
+#wrapper {
+     background: url("../images/wrapper-bg.png") repeat-y scroll 0px 0px transparent;
+     margin: 0px auto;
+     padding: 0px;
+     position: relative;
+     width: 100%;
+}
+
+body#juicers #wrapper {
+     background: url("../images/juicer-wrapper-bg.png") repeat-y scroll 0px 0px transparent;
+     margin: 0px auto;
+     padding: 0px;
+     position: relative;
+     width: 100%;
+}
+
+body#acao #wrapper {
+     background: url("../images/acao-wrapper-bg.png") repeat-y scroll 0px 0px transparent;
+     margin: 0px auto;
+     padding: 0px;
+     position: relative;
+     width: 100%;
+}
+
+body#nos #wrapper {
+     background: url("../images/nos-wrapper-bg.png") repeat-y scroll 0px 0px transparent;
+     margin: 0px auto;
+     padding: 0px;
+     position: relative;
+     width: 100%;
+}
+
+body#porque #wrapper {
+     background: url("../images/porque-wrapper-bg.png") repeat-y scroll 0px 0px transparent;
+     margin: 0px auto;
+     padding: 0px;
+     position: relative;
+     width: 100%;
+}
+
+body#contato #wrapper {
+     background: url("../images/contato-wrapper-bg.png") repeat-y scroll 0px 0px transparent;
+     margin: 0px auto;
+     padding: 0px;
+     position: relative;
+     width: 100%;
+}
+
+#wrapper2 {
+     background: url("../images/header-bg.png") repeat-x scroll 0px 0px transparent;
+     margin: 0px auto;
+     position: relative;
+     width: 100%;
+}
+
+.item-pagejuicers, .item-pagenos, .item-pageporque, .item-pageacao, .item-pagecontato {
+     min-height: 550px;
+}
+
+#content_m {
+     margin: 0px;
+     width: 960px;
+}
+
+.maincol_full, .maincol_w_left, .maincol_w_right, .maincol {
+     position: relative;
+     width: 100%;
+}
+
+.maincol .cont {
+     float: left;
+     margin: 0px;
+     padding: 0px 28px;
+     width: 440px;
+}
+
+.maincol_w_left .cont, .maincol_w_right .cont {
+     float: left;
+     margin-top: 0px;
+     padding: 0px 20px;
+     width: 620px;
+}
+
+.item-page {
+     background: none repeat scroll 0px 0px transparent;
+     border-radius: 0px 0px 0px 0px;
+     margin: 0px auto;
+     min-height: 200px;
+     padding: 0px 0px 20px;
+}
+
+#content-bottom {
+     float: left;
+     margin: 30px 0px;
+}
+
+.rightcol ul.menu li a:link, .rightcol ul.menu li a, .leftcol ul.menu li a:link, .leftcol ul.menu li a {
+     height: 16px;
+     line-height: 16px;
+}
+
+.rightcol, .leftcol {
+     margin: 0px;
+     padding: 0px;
+     text-align: left;
+     width: 275px;
+}
+
+.leftcol {
+     float: left;
+}
+
+.rightcol {
+     float: right;
+}
+
+.rightcol .moduletable, .leftcol .moduletable {
+     margin: 0px 0px 15px;
+}
+
+.innercol {
+     margin: 0px;
+}
+
+.rightcol p, .leftcol p {
+     margin: 0px 0px 7px;
+}
+
+.rightcol a:link, .leftcol a:visited {
+    
+}
+
+.rightcol a:hover, .leftcol a:focus {
+    
+}
+
+.rightcol ul, .leftcol ul {
+    
+}
+
+.rightcol ul li, .leftcol ul li {
+    
+}
+
+#bottom-content {
+     margin: 15px 0px;
+}
+
+#logos-slider {
+     background: url("../images/slider-logos-bg") repeat-x scroll 0px 0px transparent;
+     height: 60px;
+     padding: 20px 0px 21px;
+}
+
+#footer {
+     background: url("../images/footer-bg.jpg") repeat-x scroll 0px 0px transparent;
+     color: #FFFFFF;
+     font-size: 11px;
+     line-height: 15px;
+     margin: 0px auto;
+     padding: 0px;
+     position: relative;
+     width: 100%;
+}
+
+#footer-menu {
+     background: url("../images/header-bg.png") repeat-x scroll 0px 0px transparent;
+     border-bottom: medium none;
+     height: 25px;
+     margin: 0px;
+     padding: 35px 0px;
+}
+
+#footer-menu #container {
+     text-align: left;
+     width: 970px;
+}
+
+#footer-menu ul {
+     display: inline-block;
+     list-style: none outside none;
+     margin: 0px auto;
+     padding: 0px;
+     text-align: left;
+}
+
+#footer-menu ul li {
+     float: left;
+     list-style-type: none;
+     margin: 0px 16px 0px 0px;
+     max-width: 220px;
+     position: relative;
+     width: auto;
+}
+
+#footer-menu ul li a {
+     background: url("../images/footer-menu-bullet.png") no-repeat scroll 0px 5px transparent;
+     color: #180000;
+     display: block;
+     font-family: peraltaregular,Arial,Helvetica,sans-serif;
+     font-size: 15px;
+     font-weight: normal;
+     padding: 0px 0px 0px 10px;
+     text-transform: inherit;
+}
+
+#footer-menu ul li a:hover {
+     color: #467F00;
+     text-decoration: none;
+}
+
+#footer-menu ul li ul {
+     display: none ! important;
+}
+
+#footer-extra-info {
+    
+}
+
+#footer-extra-info p {
+     color: #CCCCCC;
+}
+
+#footer-extra-info a {
+    
+}
+
+#footer-sitemap, #footer-cols {
+     background: none repeat scroll 0px 0px transparent;
+     border-top: 1px solid #CCCCCC;
+     height: auto;
+     margin: 0px auto;
+     width: 100%;
+}
+
+#footer-sitemap #container {
+     border-top: 0px none;
+     height: 160px;
+     padding: 0px;
+     width: 955px;
+}
+
+#footer-sitemap table td {
+     padding: 0px;
+}
+
+#footer-sitemap .col {
+     border-right: medium none;
+     height: auto;
+     padding: 0px 40px 0px 0px;
+     width: auto;
+}
+
+#footer-sitemap .col img {
+     margin: 0px 4px 0px 0px;
+}
+
+#footer-cols #container {
+     padding: 10px 0px;
+     width: 960px;
+}
+
+#footer-cols .col1 {
+    
+}
+
+#footer-cols .col2 {
+    
+}
+
+#footer-cols .col3 {
+    
+}
+
+#footer h4, #footer h3, #footer h2, #footer h1 {
+     color: #FFFFFF;
+     font-family: playregular,Arial,Helvetica,sans-serif;
+     font-size: 11px;
+     font-weight: normal;
+     margin: 0px 0px 10px;
+}
+
+#footer p {
+     color: #FFFFFF;
+     font-family: playregular,Arial,Helvetica,sans-serif;
+     font-size: 14px;
+     margin: 0px 0px 12px;
+     text-align: left;
+}
+
+#footer a {
+     color: #FFFFFF;
+     font-weight: normal;
+     text-decoration: none;
+}
+
+#footer-sitemap ul {
+     margin: 0px;
+     padding-left: 0px;
+}
+
+#footer-sitemap ul li {
+     list-style: disc inside none;
+     margin: 0px 0px 5px;
+     text-transform: uppercase;
+}
+
+#footer-sitemap ul li a:link, #footer-sitemap ul li a:visited {
+     color: #FFFFFF;
+}
+
+#footer-sitemap ul li a:hover {
+     text-decoration: underline;
+}
+
+#copyright {
+     background: none repeat scroll 0% 0% transparent;
+     height: auto;
+     margin: 0px auto;
+     padding: 0px;
+     position: relative;
+     width: 100%;
+}
+
+#copyright #container {
+     border-top: medium none;
+     padding: 20px 0px 110px;
+}
+
+#copyright a, #copyright p {
+     color: #190000;
+     font-size: 11px;
+     margin: 3px 0px;
+}
+
+#search-form #finder-search fieldset.word {
+     border: 1px solid #D7D7D7;
+     padding: 10px;
+}
+
+#search-form #finder-search button.button {
+     background: none repeat scroll 0px 0px #333333;
+     border-radius: 3px 3px 3px 3px;
+     border: medium none;
+     color: #FFFFFF;
+     cursor: pointer;
+     float: none;
+     font-size: 12px;
+     height: auto;
+     margin: 0px 0px 0px 5px;
+     padding: 5px 20px;
+     width: auto;
+}
+
+dl.search-results {
+     margin: 0px 0px 10px;
+}
+
+dd.result-text {
+     background: none repeat scroll 0% 0% #E7E7E7;
+     margin: 0px;
+     padding: 10px;
+}

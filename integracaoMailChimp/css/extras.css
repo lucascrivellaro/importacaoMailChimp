@@ -1,0 +1,513 @@
+#form-login-remember {
+     float: left;
+     margin: 10px 0px;
+}
+
+.clr {
+     clear: both;
+     font-size: 0px;
+     line-height: 0;
+}
+
+#login-form ul li a, #form-login-username label, #form-login-password label, #form-login-remember label {
+     color: #666666;
+}
+
+fieldset.userdata {
+     padding: 7px 7px 0px;
+     width: 95%;
+}
+
+#login-form ul {
+     font: 12px arial,tahoma,sans-serif;
+}
+
+#login-form ul, div.module_text div div div div, div.module div div div div, div.module_menu div div div div {
+     list-style: none outside none;
+     padding: 0px 0px 20px 10px;
+}
+
+fieldset.userdata label {
+     font-size: 12px ! important;
+}
+
+fieldset.userdata input {
+     background: none repeat scroll 0px 0px #FFFFFF;
+     border: 1px solid #CCCCCC;
+     width: 98%;
+}
+
+#modlgn-remember {
+     background: none repeat scroll 0px 0px #E4E3E3;
+     border: 1px solid #F0DAB7;
+     margin: -4px 0px 0px 5px;
+}
+
+#modlgn-remember, #sgmenu ul li ul, #sgmenu ul li ul li a {
+     width: auto;
+}
+
+.error {
+     background: none repeat scroll 0px 0px #FDCDC9;
+}
+
+#login-form {
+     padding: 0px 0px 0px 5px;
+}
+
+.text-area {
+     border: 1px solid #CCCCCC;
+     height: 250px;
+     width: 400px;
+}
+
+.text-box {
+     width: 400px;
+}
+
+.send-btn {
+     background: none repeat scroll 0px 0px #333333;
+     border-radius: 0px 0px 0px 0px;
+     border: medium none ! important;
+     color: #FFFFFF;
+     cursor: pointer;
+     float: left;
+     font-size: 20px;
+     height: 50px;
+     margin: 10px 0px 20px 115px ! important;
+     width: 200px;
+}
+
+.send-btn:hover {
+     background: none repeat scroll 0px 0px #666666;
+}
+
+#video-gallery {
+     background: none repeat scroll 0px 0px #FFFFFF;
+     box-shadow: 0px 5px 20px -6px #000000;
+     margin: 20px auto;
+     padding: 20px;
+     width: 735px;
+}
+
+#top-info {
+     height: 39px;
+}
+
+.login-cadastro {
+     margin: 0px;
+     position: absolute;
+     right: 0px;
+     text-align: right;
+     top: 0px;
+     width: auto;
+}
+
+.info {
+     float: right;
+     font-size: 14px;
+     margin: 14px 0px 0px;
+}
+
+.login-cadastro ul {
+    
+}
+
+.login-cadastro ul li {
+     background: url("../images/menu-bg.png") repeat-x scroll center top #FFFFFF;
+     border-radius: 5px 5px 0px 0px;
+     color: #FFFFFF;
+     display: inline-block;
+     height: 33px;
+     list-style: none outside none;
+     margin: 0px 3px 0px 0px;
+}
+
+.login-cadastro ul li a {
+     cursor: pointer;
+     display: inline-block;
+     padding: 9px 20px 9px 33px;
+}
+
+.login-cadastro ul li a.login {
+     background: url("../images/login-icon.png") no-repeat scroll 5px 7px transparent;
+}
+
+.login-cadastro ul li a.register {
+     background: url("../images/register-icon.png") no-repeat scroll 5px 7px transparent;
+}
+
+.login-cadastro ul li a.login:hover {
+     background: url("../images/login-icon.png") no-repeat scroll 5px 7px #FF6600;
+     border-radius: 5px 5px 0px 0px;
+     color: #FFFFFF;
+}
+
+.login-cadastro ul li a.register:hover {
+     background: url("../images/register-icon.png") no-repeat scroll 5px 7px #FF6600;
+     border-radius: 5px 5px 0px 0px;
+     color: #FFFFFF;
+}
+
+.registration {
+     width: 95%;
+}
+
+.registration, .remind, .reset {
+     display: inline-block;
+     padding: 20px;
+}
+
+.registration dl dd, .remind dl dd, .reset dl dd {
+     margin: 0px;
+     padding: 0px;
+}
+
+.registration label, .remind label, .reset label {
+     clear: both;
+     float: left;
+}
+
+.remind input, .reset input {
+     border-radius: 5px 5px 5px 5px;
+     border: 1px solid #999999;
+     clear: both;
+     float: left;
+     margin: 10px 0px;
+     padding: 5px;
+     width: 200px;
+}
+
+.registration input {
+     border-radius: 5px 5px 5px 5px;
+     border: 1px solid #999999;
+     clear: both;
+     float: left;
+     margin: 10px 0px;
+     padding: 5px;
+     width: 200px;
+}
+
+.registration button, .remind button, .reset button {
+     background: url("../images/readmore-bg.png") repeat-x scroll 0px 0px transparent;
+     border-radius: 3px 3px 3px 3px;
+     clear: both;
+     color: #FFFFFF;
+     float: left;
+     margin: 0px 10px 0px 0px;
+     padding: 5px 10px;
+     width: 100px;
+}
+
+.sigplus-gallery {
+     background: url("../images/sigplus-gallery-bg.png") no-repeat scroll 0px 0px #DA181E;
+     padding: 22px 0px;
+     width: 960px;
+}
+
+.boxplus-paging {
+     left: 0px;
+     position: absolute ! important;
+     text-align: center;
+     width: 100% ! important;
+}
+
+.boxplus-next {
+     background: url("../images/next.png") no-repeat scroll 0px 0px transparent;
+     bottom: 55px;
+     color: #FFFFFF ! important;
+     font-size: 0px;
+     height: 30px;
+     margin-right: 10px;
+     position: absolute;
+     right: 0px;
+     width: 30px;
+}
+
+.boxplus-last {
+     background: url("../images/prev.png") no-repeat scroll 0px 0px transparent;
+     bottom: 55px;
+     color: #FFFFFF ! important;
+     font-size: 0px;
+     height: 30px;
+     left: 0px;
+     margin-left: 10px;
+     position: absolute;
+     width: 30px;
+     z-index: 998;
+}
+
+.boxplus-first {
+     background: url("../images/prev.png") no-repeat scroll 0px 0px transparent;
+     bottom: 60px;
+     color: #FFFFFF ! important;
+     font-size: 0px;
+     left: 0px;
+     margin-left: 8px;
+     position: absolute;
+}
+
+.boxplus-prev {
+     background: url("../images/prev.png") no-repeat scroll 0px 0px transparent;
+     bottom: 55px;
+     color: #FFFFFF ! important;
+     font-size: 0px;
+     height: 30px;
+     left: 0px;
+     margin-left: 10px;
+     position: absolute;
+     width: 30px;
+     z-index: 999;
+}
+
+#boxplus .boxplus-controls > .boxplus-prev {
+     background: url("buttons.png") no-repeat scroll -24px 2px transparent ! important;
+}
+
+#top-content .col {
+     border-left: 10px solid #B0C90C;
+     font-size: 12px;
+     height: 133px;
+     padding: 0px 8px;
+     width: 135px;
+}
+
+#home_cols {
+     color: #FFFFFF;
+     display: inline-block;
+     margin: 0px;
+     padding: 0px;
+     position: relative;
+}
+
+#home_cols .large, #home_cols .small {
+     display: inline-block;
+     margin: 0px 0px 5px;
+}
+
+#home_cols .small {
+     background: none repeat scroll 0% 0% #F9A649;
+     float: left;
+     height: 250px;
+     padding: 0px;
+     width: 275px;
+}
+
+#home_cols .large {
+     float: left;
+     height: 250px;
+     margin: 0px;
+     overflow: hidden;
+     padding: 0px;
+     vertical-align: top;
+     width: 395px;
+}
+
+#home_cols .middle {
+     margin: 0px 5px;
+}
+
+#home_cols h3 {
+     color: #FFFFFF;
+     font-size: 38px;
+     margin: 30px 0px 10px;
+     padding: 0px 30px;
+     width: auto;
+}
+
+#home_cols a.readmore {
+     background: none repeat scroll 0% 0% #D26F00;
+     color: #FFFFFF;
+     display: inline-block;
+     margin: 5px 0px;
+     padding: 8px 15px;
+     position: relative;
+     text-decoration: none;
+}
+
+#home_cols p {
+     font-size: 18px;
+     padding: 0px 30px;
+     text-align: left;
+}
+
+#home_cols img {
+     margin: 0px;
+     padding: 0px;
+}
+
+#newsletter {
+     background: none repeat scroll 0% 0% #4B4A4A;
+     float: right;
+     height: auto;
+     padding: 0px 20px 0px 15px;
+     width: 270px;
+}
+
+#newsletter h3 {
+     font-size: 18px;
+     margin: 15px 0px 7px 10px;
+}
+
+.slide-desc-bg {
+     background: none repeat scroll 0% 0% transparent;
+     opacity: 0.5;
+}
+
+.slide-desc h1 {
+     color: #1C4F0C;
+     font-family: peraltaregular,Arial,Helvetica,sans-serif;
+     font-size: 47px;
+     margin: 0px;
+}
+
+.slide-desc h2 {
+     border-bottom: 0px none;
+     color: #468000;
+     font-family: peraltaregular,Arial,Helvetica,sans-serif;
+     font-size: 34px;
+     margin: 0px;
+     padding: 0px;
+     width: auto;
+}
+
+.slide-desc p {
+     color: #9E9E9E;
+     font-family: Lato_light,Arial,Helvetica,sans-serif;
+     font-size: 24px;
+     text-align: left;
+}
+
+#boxplus .boxplus-dialog {
+     background-color: rgba(255, 255, 255, 0.8);
+     color: black;
+     height: auto ! important;
+}
+
+#boxplus .boxplus-bottom > .boxplus-caption {
+     height: auto;
+     margin: 5px 0px 0px;
+     overflow: auto;
+     position: relative;
+}
+
+div.boxplus-imagecaption.boxplus-overlaycaption {
+     background-color: rgba(0, 0, 0, 0.6) ! important;
+     bottom: 0px ! important;
+     color: white ! important;
+     height: 5% ! important;
+     overflow: hidden ! important;
+     padding: 10px ! important;
+}
+
+.aidanews2_destques h1.aidanews2_title a {
+     border: 0px none ! important;
+     color: #9F080A;
+     display: inline;
+     font-size: 26px;
+     font-weight: normal ! important;
+     margin: 0px;
+     padding: 0px;
+     text-decoration: none;
+}
+
+.aidanews2_destques .aidanews2_tabrow .aidanews2_art {
+     border-right: 0px none;
+}
+
+.aidanews2_destques .infirstrow {
+     border-top: medium none;
+}
+
+.aidanews2_destques .firstinrow {
+     border-left: medium none;
+     margin: 0px 40px 0px 0px;
+}
+
+.aidanews2_destques .aidanews2_line {
+     border-bottom: medium none;
+     width: 100%;
+}
+
+.aidanews2_destques .aidanews2_art a.readon {
+     background: url("../images/readmore-bg.png") repeat-x scroll 0px 0px transparent;
+     border-radius: 3px 3px 3px 3px;
+     color: #FFFFFF;
+     padding: 5px 15px;
+     text-decoration: none;
+}
+
+.aidanews2_destques .aidanews2_main {
+     color: #424242;
+     margin: 22px 0px 20px;
+}
+
+#djslider163 {
+     height: 60px ! important;
+}
+
+#djslider-loader163 {
+     height: 60px ! important;
+}
+
+.moduletable_logos .djslider-loader {
+     background: none repeat scroll 0px 0px transparent ! important;
+}
+
+.login button, .login textarea, .login input {
+     background: none repeat scroll 0px 0px #FFFFFF;
+     border: 1px solid #CCCCCC;
+}
+
+.login button.button {
+     background: url("../images/readmore-bg.png") repeat-x scroll 0px 0px transparent;
+     border-radius: 3px 3px 3px 3px;
+     border: 0px none;
+     color: #FFFFFF;
+     cursor: pointer;
+     padding: 5px 10px;
+}
+
+.login label {
+     display: inline-block;
+     min-width: 100px;
+     text-align: right;
+}
+
+.login .login-fields {
+     margin: 0px 0px 5px;
+}
+
+.login fieldset, .registration fieldset, .reset fieldset, .remind fieldset {
+     border: 0px none;
+     padding: 0px;
+}
+
+#ja-mainnav ul.menu li#item-101 {
+     background: url("../images/item-menu-bg.png") no-repeat scroll 0px 0px transparent;
+}
+
+#ja-mainnav ul.menu li#item-105 {
+     background: url("../images/item-menu-bg.png") no-repeat scroll -140px 0px transparent;
+}
+
+#ja-mainnav ul.menu li#item-106 {
+     background: url("../images/item-menu-bg.png") no-repeat scroll -280px 0px transparent;
+}
+
+#ja-mainnav ul.menu li#item-165 {
+     background: url("../images/item-menu-bg.png") no-repeat scroll -420px 0px transparent;
+}
+
+#ja-mainnav ul.menu li#item-182 {
+     background: url("../images/item-menu-bg.png") no-repeat scroll -558px 0px transparent;
+}
+
+#footer-menu ul li#item-274 {
+     max-width: 140px;
+}
+
+table.produtos td {
+     padding: 5px 20px 20px;
+     text-align: center;
+}
