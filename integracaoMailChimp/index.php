@@ -326,11 +326,118 @@ fieldset.formFieldset div.formCaption2 {
 						<div class="cont">
 
 							<div class="item-pagecontato">
+							
+							<?php 
+								if(isset($_POST['nomeLista'])):
+									$nomeLista = $_POST['nomeLista'];
+									$subscriber = "";
+									$merge_vars = "";
+									$email = $_POST['email'];
+									if($nomeLista = "representacao"){
+										
+										$subscriber = new SubscriberRepresentante();
+										$merge_vars = array(
+												"FNAME" => $_POST["nome"],
+												"LNAME" => $_POST["sobrenome"],
+												"EMPRESA" => $_POST["empresa"],
+												"DDD" => $_POST["ddd"],
+												"TELEFONE" => $_POST["telefone"],
+												"REGIAO" => $_POST["regiao"],
+												"REGESPC" => $_POST["outraRegiao"],
+												"PARCERIA" => $_POST["tipoParceria"],
+												"PARCESPEC" => $_POST["outraParceria"],
+												"INVESTIMEN" => $_POST["investimento"],
+												"OUTRAQUEST" => $_POST["questaoASerRespondida"],
+												"OPNIAO" => $_POST["oQueMudariaNegocio"],
+												"MOTIVO" => $_POST["motivoNaoParticiparNossoSistema"],
+												"CVENDAS" => $_POST["possuiConhecimentoVendas"],
+												"PNEGOCIO" => $_POST["possuiNegocio"],
+												"TEMPO" => $_POST["tempoPretendeDedicar"],
+												"OBS" => $_POST["obs"]
+										);
+										
+									}									
+									elseif ($nomeLista == "residencial"){
+										$subscriber = new SubscriberKateResidencial();
+										$groups="";
+										if(!empty($_POST['razoes']))
+										{
+											foreach($_POST['razoes'] as $value => $val)
+											{
+										
+												$values[] = $val;
+										
+											}
+											$groups = implode(",", $values);
+										}
+										$merge_vars = array(
+												"FNAME" => $_POST["nome"],
+												"LNAME" => $_POST["sobrenome"],
+												"DDD" => $_POST["ddd"],
+												"TELEFONE" => $_POST["telefone"],
+												"CIDADE" => $_POST["cidade"],
+												"BAIRRO" => $_POST["bairro"],
+												"QPESSOAS" => $_POST["qtdPessoas"],
+												"QTDDOSES" => $_POST["qtdDoses"],
+												"PARAQUEM" => $_POST["paraquem"],
+												"IDADE" => $_POST["idade"],
+												"SEXO" => $_POST["sexo"],
+												"PREFERE" => $_POST["prefere"],
+												"PQINTERESS" => $_POST["pqInteressa"],
+												"SUGESTAO" => $_POST["sugestao"],
+												"BENEFICIO" => $_POST["beneficio"],
+												
+												'GROUPINGS'=>array(
+													array('name'=>'Apenas três principais  para você ter o JuiceBox?', 'groups'=> $groups)
+												)
 
-								<h2>Fale Conosco</h2>
-
-								<?php include_once './formulario.php';?>
+										);
+										
+										
+									}
+									else if($nomeLista == "empresa"){
+										$subscriber = new SubscriberKateEmpresa();
+										$merge_vars = array(
+												"FNAME" => $_POST["nome"],
+												"LNAME" => $_POST["sobrenome"],
+												"EMPRESA" => $_POST["empresa"],
+												"RAMO" => $_POST["ramo"],
+												"DDD" => $_POST["ddd"],
+												"TELEFONE" => $_POST["telefone"],
+												"REGIAO" => $_POST["regiao"],
+												"REGESPC" => $_POST["outraRegiao"],
+												"MENSAGEM" => $_POST["mensagem"]
+										);
+									}
+									else if($nomeLista == "assistencia"){
+										
+									}
+									
+									
+									$subscriber->subscribe($email, $merge_vars);
+									//do not remove this line
+									;
 								
+								else :
+								
+								
+							?>
+
+								<h2>Contato</h2>
+								
+								<div class="formularios">
+									<div class="formulario">
+										<div class="title">
+											<h2>Desejo ser um representante</h2>
+										</div>
+										<div class="body">
+											<?php include_once './formulario-representante.php';?>
+										</body>
+									</div
+								</div>
+								<?php 
+									endif;
+								?>
 								<p>Juice in Time Technology</p>
 								<p>
 									<a href="mailto:contato@juiceintime.com"></a><a
