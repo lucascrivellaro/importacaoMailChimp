@@ -242,6 +242,7 @@ fieldset.formFieldset div.formCaption2 {
 <link rel="stylesheet" href="./css/hornav.css" type="text/css" />
 <link rel="stylesheet" href="./css/extras.css" type="text/css" />
 <link rel="stylesheet" href="./css/vertnav.css" type="text/css" />
+<link rel="stylesheet" href="./css/formularios.css" type="text/css" />
 <script src="js/jquery-1.8.1.min.js" type="text/javascript" ></script>
 <script src="./js/peralta.js" type="text/javascript"></script>
 
@@ -428,36 +429,36 @@ fieldset.formFieldset div.formCaption2 {
 								<div class="formularios">
 									<div class="formulario">
 										<div class="title">
-											<h2>Desejo ser um representante</h2>
+											<h2 class="formulariotitulo">Desejo ser um representante</h2>
 										</div>
-										<div class="body">
+										<div class="formulariocorpo">
 											<?php include_once './formulario-representante.php';?>
 										</div>
 									</div>
 									
 									<div class="formulario">
 										<div class="title">
-											<h2>Quero um JuiceBox na minha Casa</h2>
+											<h2 class="formulariotitulo">Quero um JuiceBox na minha Casa</h2>
 										</div>
-										<div class="body">
+										<div class="formulariocorpo">
 											<?php include_once './formulario-kate-residencial.php';?>
 										</div>
 									</div>
 									
 									<div class="formulario">
 										<div class="title">
-											<h2>Quero mais saude na minha empresa</h2>
+											<h2 class="formulariotitulo">Quero mais saude na minha empresa</h2>
 										</div>
-										<div class="body">
+										<div class="formulariocorpo">
 											<?php include_once './formulario-kate-empresa.php';?>
 										</div>
 									</div>
 									
 									<div class="formulario">
 										<div class="title">
-											<h2>Assistencia Tecnica</h2>
+											<h2 class="formulariotitulo">Assistencia Tecnica</h2>
 										</div>
-										<div class="body">
+										<div class="formulariocorpo">
 											<?php include_once './formulario-assistencia-tecnica.php';?>
 										</div>
 									</div>																														

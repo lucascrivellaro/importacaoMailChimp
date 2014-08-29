@@ -155,7 +155,7 @@ select{
 	
 
 	<label for="">Alguma observação?</label>
-	<input type="text" id="" class="obs" />
+	<input type="text" class="formulariocorpotxt" />
 	
 	<input type="hidden" name="nomeLista" value="representacao" />
 	<input type="submit" value="Enviar Solicita&ccedil;&atilde;o">
