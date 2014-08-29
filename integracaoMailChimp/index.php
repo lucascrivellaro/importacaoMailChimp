@@ -334,8 +334,17 @@ fieldset.formFieldset div.formCaption2 {
 									$subscriber = "";
 									$merge_vars = "";
 									$email = $_POST['email'];
-									if($nomeLista = "representacao"){
-										
+									
+									$enviarEmail = false;
+									$to = "";
+									$from ="";
+									$fromName="";
+									$informacoes = "";
+									$assunto="";
+									$sendMailChimp = true;
+									
+									if($nomeLista == "representacao"){
+										include_once 'SubscriberRepresentante.php';
 										$subscriber = new SubscriberRepresentante();
 										$merge_vars = array(
 												"FNAME" => $_POST["nome"],
@@ -356,9 +365,34 @@ fieldset.formFieldset div.formCaption2 {
 												"TEMPO" => $_POST["tempoPretendeDedicar"],
 												"OBS" => $_POST["obs"]
 										);
+
+										if($_POST["investimento"] == "Ate R$ 100.000" || $_POST["investimento"] == "Acima de R$ 100.000"){
+											$enviarEmail = true;
+											$from = $email;
+											$fromName = $_POST["nome"];
+											$to = "contato@contentsys.com.br";
+											$assunto = "Investidor interessado em investir {$_POST["investimento"]}";
+											
+											$informacoes.= "Nome: {$_POST["nome"]}";
+											$informacoes.= "Empresa: {$_POST["empresa"]}";
+											$informacoes.= "DDD: {$_POST["ddd"]}";
+											$informacoes.= "Telefone: {$_POST["telefone"]}";
+											$informacoes.= "Regiao: {$_POST["regiao"]}";
+											$informacoes.= "Regiao (outra): {$_POST["outraRegiao"]}";
+											$informacoes.= "Tipo Parceria: {$_POST["tipoParceria"]}";
+											$informacoes.= "Investimento: {$_POST["investimento"]}";
+											$informacoes.= "Questao que gostaria que fosse respondida: {$_POST["questaoASerRespondida"]}";
+											$informacoes.= "O Que Mudaria no Negocio: {$_POST["oQueMudariaNegocio"]}";
+											$informacoes.= "Possui Conhecimento de Vendas: {$_POST["possuiConhecimentoVendas"]}";
+											$informacoes.= "Possui Negocio: {$_POST["possuiNegocio"]}";
+											$informacoes.= "Tempo Pretende Dedicar: {$_POST["tempoPretendeDedicar"]}";
+											$informacoes.= "Obs: {$_POST["obs"]}";
+
+										}
 										
 									}									
 									elseif ($nomeLista == "residencial"){
+										include_once 'SubscriberKateResidencial.php';
 										$subscriber = new SubscriberKateResidencial();
 										$groups="";
 										if(!empty($_POST['razoes']))
@@ -397,6 +431,7 @@ fieldset.formFieldset div.formCaption2 {
 										
 									}
 									else if($nomeLista == "empresa"){
+										include_once 'SubscriberKateEmpresa.php';
 										$subscriber = new SubscriberKateEmpresa();
 										$merge_vars = array(
 												"FNAME" => $_POST["nome"],
@@ -411,12 +446,41 @@ fieldset.formFieldset div.formCaption2 {
 										);
 									}
 									else if($nomeLista == "assistencia"){
+										$sendMailChimp = false;
+										
+										$enviarEmail = true;
+										$from = $email;
+										$fromName = $_POST["nome"];
+										$assunto = "Solicitacao Assistencia Tecnica";
+										$to = "contato@contentsys.com.br";
+											
+										$informacoes.= "Nome: {$_POST["nome"]}";
+										$informacoes.= "Empresa: {$_POST["empresa"]}";
+										$informacoes.= "DDD: {$_POST["ddd"]}";
+										$informacoes.= "Telefone: {$_POST["telefone"]}";
+										$informacoes.= "Mensagem: {$_POST["mensagem"]}";
 										
 									}
 									
+									$erro = false;
 									
-									$subscriber->subscribe($email, $merge_vars);
-									//do not remove this line
+									if($sendMailChimp){
+										$subscriber->subscribe($email, $merge_vars);
+									}
+									
+									if($enviarEmail){
+										include_once 'EmailSender.php';
+										$emailSender = new EmailSender();
+										$erro = !$emailSender->send($to, $assunto, $from, $fromName, $informacoes);
+									}
+									
+									if($erro){
+										echo "<div class='resposta-ok'><h2>Dados Enviados Com Sucesso<h2><p>Recebemos seus dados, em breve entraremos em contato. Obrigado!</p></div>";
+									}else{
+										echo "<div class='resposta-fail'><h2>Desculpe-nos<h2><p>Mas n&atilde;o foi possivel receber suas informa&ccedil;&otilde;es no momento. Tente novamente Mais tarde.</p></div>";
+										
+									}
+									//
 									;
 								
 								else :

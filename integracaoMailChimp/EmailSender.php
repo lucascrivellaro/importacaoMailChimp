@@ -15,10 +15,7 @@ class EmailSender{
 				"Reply-To: $nome <$from>" . "\r\n" .
 				'X-Mailer: PHP/' . phpversion();
 		
-		if(mail($to, $assunto, $message, $headers)){
-			return true;
-		}else {
-			return false;
-		}
+		return mail($to, $assunto, $message, $headers);
+			
 	}
 }
