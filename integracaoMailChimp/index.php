@@ -475,7 +475,7 @@ fieldset.formFieldset div.formCaption2 {
 										$erro = !$emailSender->send($to, $assunto, $from, $fromName, $informacoes);
 									}
 									
-									if($erro){
+									if(!$erro){
 										echo "<div class='resposta-ok'><h2>Dados Enviados Com Sucesso<h2><p>Recebemos seus dados, em breve entraremos em contato. Obrigado!</p></div>";
 									}else{
 										echo "<div class='resposta-fail'><h2>Desculpe-nos<h2><p>Mas n&atilde;o foi possivel receber suas informa&ccedil;&otilde;es no momento. Tente novamente Mais tarde.</p></div>";
