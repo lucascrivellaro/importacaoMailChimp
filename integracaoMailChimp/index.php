@@ -244,6 +244,7 @@ fieldset.formFieldset div.formCaption2 {
 <link rel="stylesheet" href="./css/vertnav.css" type="text/css" />
 <link rel="stylesheet" href="./css/formularios.css" type="text/css" />
 <script src="js/jquery-1.8.1.min.js" type="text/javascript" ></script>
+<script src="js/jquery-ui/jquery-ui.min.js" type="text/javascript" ></script>
 <script src="./js/peralta.js" type="text/javascript"></script>
 
 
@@ -489,43 +490,44 @@ fieldset.formFieldset div.formCaption2 {
 							?>
 
 								<h2>Contato</h2>
-								
+								<script>
+									jQuery(document).ready(function(){
+										jQuery(".formularios").accordion({
+														heightStyle:"content", 
+														collapsible:true, 
+														active: false 
+										});
+									})
+								</script>
 								<div class="formularios">
-									<div class="formulario">
-										<div class="title">
-											<h2 class="formulariotitulo">Desejo ser um representante</h2>
-										</div>
-										<div class="formulariocorpo">
-											<?php include_once './formulario-representante.php';?>
-										</div>
+									
+									<h3 class="formulariotitulo">Desejo ser um representante</h3>
+									
+									<div class="formulariocorpo">
+										<?php include_once './formulario-representante.php';?>
+									</div>
+							
+									
+								
+									<h3 class="formulariotitulo">Quero um JuiceBox na minha Casa</h3>
+								
+									<div class="formulariocorpo">
+										<?php include_once './formulario-kate-residencial.php';?>
+									</div>
+								
+									
+									<h3 class="formulariotitulo">Quero mais saude na minha empresa</h3>
+										
+									<div class="formulariocorpo">
+										<?php include_once './formulario-kate-empresa.php';?>
 									</div>
 									
-									<div class="formulario">
-										<div class="title">
-											<h2 class="formulariotitulo">Quero um JuiceBox na minha Casa</h2>
-										</div>
-										<div class="formulariocorpo">
-											<?php include_once './formulario-kate-residencial.php';?>
-										</div>
+									<h3 class="formulariotitulo">Assistencia Tecnica</h3>
+										
+									<div class="formulariocorpo">
+										<?php include_once './formulario-assistencia-tecnica.php';?>
 									</div>
-									
-									<div class="formulario">
-										<div class="title">
-											<h2 class="formulariotitulo">Quero mais saude na minha empresa</h2>
-										</div>
-										<div class="formulariocorpo">
-											<?php include_once './formulario-kate-empresa.php';?>
-										</div>
-									</div>
-									
-									<div class="formulario">
-										<div class="title">
-											<h2 class="formulariotitulo">Assistencia Tecnica</h2>
-										</div>
-										<div class="formulariocorpo">
-											<?php include_once './formulario-assistencia-tecnica.php';?>
-										</div>
-									</div>																														
+																																						
 								</div>
 								
 								

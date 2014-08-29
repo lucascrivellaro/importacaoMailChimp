@@ -1,6 +1,11 @@
 <form id="frmRepresentacao" method="post">
+	
 	<label for="">Nome*</label>
-	<input type="text" id="" class="CampoForm" name='nome'/>
+	<input type="text" id="" class="CampoForm blah" name='nome' id="nome"/>
+	
+	<script type="text/javascript">
+	
+	</script>
 	
 	<label for="">Sobrenome*</label>
 	<input type="text" id="" class="CampoForm" name='sobrenome'/>
