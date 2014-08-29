@@ -41,35 +41,52 @@ echo str_replace("}", ", \"url\":\"". $isca['url'] . "\"}" , $result);
 
 ?>
 
+	<label for="">Nome*</label>
+	<input type="text" id="" class="CampoForm" name='nome'/>
+	
+	<label for="">Sobrenome*</label>
+	<input type="text" id="" class="CampoForm" name='sobrenome'/>
+		
+	<label for="">Empresa*</label>
+	<input type="text" id="" class="CampoForm" name='empresa'/>
+	
+	<label for="">Ramo*</label>
+	<input type="text" id="" class="CampoForm" name='ramo'/>
+	
+	<label for="">DDD*</label>
+	<input type="text" id="" class="CampoForm" name='ddd'/>
+	
+	<label for="">Telefone*</label>
+	<input type="text" id="" class="CampoForm" name='telefone'/>
+	
+	<label for="">Qual regi&atilde;o gostaria de atuar?*</label>
+	<select id="" name='regiao'>
+		<option value="SP - Capital">SP - Capital</option>
+		<option value="SP - Grande SP">SP - Grande S&atilde;o Paulo</option>
+		<option value="SP - Grande Campinas">SP - Grande Campinas</option>
+		<option value="SP - Outros">SP - Outros (Especificar)</option>
+		
+		<option value="PR - Capital">PR - Capital</option>
+		<option value="PR - Outros (Especificar)">PR - Outros (Especificar)</option>		
+		
+		<option value="RJ - Capital">RJ - Capital</option>
+		<option value="RJ - Outros (Especificar)">RJ - Outros (Especificar)</option>
+		
+		<option value="MG - Capital">MG - Capital</option>
+		<option value="MG - Outros (Especificar)">MG - Outros (Especificar)</option>
+		
+		<option value="Nordeste - Outros (Especificar)">Nordeste - Outros (Especificar)</option>
+		<option value="Sul - Outros (Especificar)">Sul - Outros (Especificar)</option>
+	</select>
+	
+	<label for="">Outra regi&atilde;o (Especifique)</label>
+	<input type="text" id="" class="CampoForm" name='outraRegiao'/>
 
-	Nome:*<br />
-	<input type="text" id="" class="CampoForm" /><br />
-	E-mail:*<br />
-	<input type="text" id="" class="CampoForm" /><br />
-	Telefone:*<br />
-	<input type="text" id="" class="CampoForm" /><br />
-	Empresa:*<br />
-	<input type="text" id="" class="CampoForm" /><br />
-	Ramo:*<br />
-	<input type="text" id="" class="CampoForm" /><br />
-	Cidade:*<br />
-	<input type="text" id="" class="CampoForm" /><br />
-	Assunto:*<br />
-	<input type="radio" name="assunto" id="" >Desejo ser um representante<br />
-	<input type="radio" name="assunto" id="" >Quero mais saude em minha empresa<br />
-	<input type="radio" name="assunto" id="" >Quero um JuiceBox na minha casa<br />
-	<input type="radio" name="assunto" id="" >Indique um cliente<br />
-	<input type="radio" name="assunto" id="" >Assist&ecirc;ncia T&eacute;cnica<br />
-	<input type="radio" name="assunto" id="" >Outro<br />
-	<textarea rows="" cols="" class="CampoForm" style="margin-top:5px; height: 85px;"></textarea><br />
-	<input type="button" value="Enviar" name="subscribe" id="mc-embedded-subscribe" class="rsform-submit-button">&nbsp;&nbsp;<input type="reset" value="Limpar" class="rsform-reset-button" />
-	
-	<div id="mce-responses" class="clear">
-		<div class="response" id="mce-error-response" style="display:none"></div>
-		<div class="response" id="mce-success-response" style="display:none"></div>
-	</div> 
-	
-	
+	<label for="">Mensagem</label>
+	<textarea name='mensagem'></textarea><br />
+
+	<input type="hidden" name="nomeLista" value="empresa" />
+	<input type="submit" value="Enviar Solicita&ccedil;&atilde;o">
 	
 	<?php  include_once './script.php';?>	
 	

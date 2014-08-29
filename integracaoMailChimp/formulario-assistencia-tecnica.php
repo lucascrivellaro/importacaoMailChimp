@@ -41,33 +41,29 @@ echo str_replace("}", ", \"url\":\"". $isca['url'] . "\"}" , $result);
 
 ?>
 
-
-	Nome:*<br />
-	<input type="text" id="" class="CampoForm" /><br />
-	E-mail:*<br />
-	<input type="text" id="" class="CampoForm" /><br />
-	Telefone:*<br />
-	<input type="text" id="" class="CampoForm" /><br />
-	Empresa:*<br />
-	<input type="text" id="" class="CampoForm" /><br />
-	Ramo:*<br />
-	<input type="text" id="" class="CampoForm" /><br />
-	Cidade:*<br />
-	<input type="text" id="" class="CampoForm" /><br />
-	Assunto:*<br />
-	<input type="radio" name="assunto" id="" >Desejo ser um representante<br />
-	<input type="radio" name="assunto" id="" >Quero mais saude em minha empresa<br />
-	<input type="radio" name="assunto" id="" >Quero um JuiceBox na minha casa<br />
-	<input type="radio" name="assunto" id="" >Indique um cliente<br />
-	<input type="radio" name="assunto" id="" >Assist&ecirc;ncia T&eacute;cnica<br />
-	<input type="radio" name="assunto" id="" >Outro<br />
-	<textarea rows="" cols="" class="CampoForm" style="margin-top:5px; height: 85px;"></textarea><br />
-	<input type="button" value="Enviar" name="subscribe" id="mc-embedded-subscribe" class="rsform-submit-button">&nbsp;&nbsp;<input type="reset" value="Limpar" class="rsform-reset-button" />
+	<label for="">Nome*</label>
+	<input type="text" id="" class="CampoForm" name='nome'/>
 	
-	<div id="mce-responses" class="clear">
-		<div class="response" id="mce-error-response" style="display:none"></div>
-		<div class="response" id="mce-success-response" style="display:none"></div>
-	</div> 
+	<label for="">Sobrenome*</label>
+	<input type="text" id="" class="CampoForm" name='sobrenome'/>
+		
+	<label for="">Empresa*</label>
+	<input type="text" id="" class="CampoForm" name='empresa'/>
+	
+	<label for="">Ramo*</label>
+	<input type="text" id="" class="CampoForm" name='ramo'/>
+	
+	<label for="">DDD*</label>
+	<input type="text" id="" class="CampoForm" name='ddd'/>
+	
+	<label for="">Telefone*</label>
+	<input type="text" id="" class="CampoForm" name='telefone'/>
+	
+	<label for="">Mensagem</label>
+	<textarea name='mensagem'></textarea><br />
+
+	<input type="hidden" name="nomeLista" value="assistencia" />
+	<input type="submit" value="Enviar Solicita&ccedil;&atilde;o">
 	
 	
 	

@@ -432,9 +432,38 @@ fieldset.formFieldset div.formCaption2 {
 										</div>
 										<div class="body">
 											<?php include_once './formulario-representante.php';?>
-										</body>
-									</div
+										</div>
+									</div>
+									
+									<div class="formulario">
+										<div class="title">
+											<h2>Quero um JuiceBox na minha Casa</h2>
+										</div>
+										<div class="body">
+											<?php include_once './formulario-kate-residencial.php';?>
+										</div>
+									</div>
+									
+									<div class="formulario">
+										<div class="title">
+											<h2>Quero mais saude na minha empresa</h2>
+										</div>
+										<div class="body">
+											<?php include_once './formulario-kate-empresa.php';?>
+										</div>
+									</div>
+									
+									<div class="formulario">
+										<div class="title">
+											<h2>Assistencia Tecnica</h2>
+										</div>
+										<div class="body">
+											<?php include_once './formulario-assistencia-tecnica.php';?>
+										</div>
+									</div>																														
 								</div>
+								
+								
 								<?php 
 									endif;
 								?>
