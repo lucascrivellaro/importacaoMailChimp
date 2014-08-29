@@ -1,46 +1,8 @@
 <?php
 
-if(isset($_POST['email']) && isset($_POST['nome'])){
-
-$postdata = http_build_query(
-		array(
-				"apikey" => "392858b817640e1fcfbfe6595feb141e-us3",
-				"id"=> get_field('id_da_lista'),
-				"email" => array(
-						"email" => $_POST['email'],
-						"euid" => $_POST['nome'],
-						"leid" => get_field('id_da_lista')
-				),
-				"merge_vars" => array(
-						"FNAME" =>  $_POST['nome']
-				),
-				"email_type"=> "html",
-				"double_optin"=> false,
-				"update_existing"=> true,
-				"replace_interests"=> true,
-				"send_welcome"=> false
-		)
-);
-
-$opts = array('http' =>
-		array(
-				'method'  => 'POST',
-				'header'  => 'Content-type: application/x-www-form-urlencoded',
-				'content' => $postdata
-		)
-);
-
-$context  = stream_context_create($opts);
-
-$result = file_get_contents('https://us3.api.mailchimp.com/2.0/lists/subscribe.json', false, $context);
-$isca = get_field('isca_digital');
-
-echo str_replace("}", ", \"url\":\"". $isca['url'] . "\"}" , $result);
-}
-	
 
 ?>
-
+<form id="frmKateResidencial" method="post" >
 	<label for="">Nome*</label>
 	<input type="text" id="" class="CampoForm" name='nome'/>
 	
@@ -129,22 +91,21 @@ echo str_replace("}", ", \"url\":\"". $isca['url'] . "\"}" , $result);
 		<option value="Comodidade">Comodidade</option>
 		<option value="Seguranca alimentar">Seguran&ccedil;a alimentar</option>
 		<option value="Seguranca no manuseio">Seguran&ccedil;a no manuseio</option>
-		<option value="Opcoes de frutas e bebidas">Opçoes de frutas e bebidas</option>
+		<option value="Opcoes de frutas e bebidas">Opï¿½oes de frutas e bebidas</option>
 		<option value="Outros">Outros</option>
 	</select>
 	
 	<label for="">Apenas tr&ecirc;s principais para voc&ecirc; ter o JuiceBox?</label>
 	<input type="checkbox" name='razoes' value="Suco de frutas">Suco de frutas<br />	
-	<input type="checkbox" name='razoes' value="Bebidas detox">Bebidas "detox"<br />
-	<input type="checkbox" name='razoes' value="Chas e chas com frutas">Ch&aacute; e ch&aacute;s com frutas<br />
-	<input type="checkbox" name='razoes' value="Sucos enriquecidos com proteinas">Sucos enriquecidos com prote&iacute;nas<br />
-	<input type="checkbox" name='razoes' value="Sucos enriquecidos com fibras">Sucos enriquecidos com fibras<br />
-	<input type="checkbox" name='razoes' value="Achocolatados sem conservantes">Achocolatados sem conservantes<br />
-	<input type="checkbox" name='razoes' value="Outras">Outras<br />
+	<input type="checkbox" name='razoes[]' value="Bebidas detox">Bebidas "detox"<br />
+	<input type="checkbox" name='razoes[]' value="Chas e chas com frutas">Ch&aacute; e ch&aacute;s com frutas<br />
+	<input type="checkbox" name='razoes[]' value="Sucos enriquecidos com proteinas">Sucos enriquecidos com prote&iacute;nas<br />
+	<input type="checkbox" name='razoes[]' value="Sucos enriquecidos com fibras">Sucos enriquecidos com fibras<br />
+	<input type="checkbox" name='razoes[]' value="Achocolatados sem conservantes">Achocolatados sem conservantes<br />
+	<input type="checkbox" name='razoes[]' value="Outras">Outras<br />
 
 	<input type="hidden" name="nomeLista" value="residencial" />
 	<input type="submit" value="Enviar Solicita&ccedil;&atilde;o">
 
-	<?php  include_once './script.php';?>	
+</form>
 	
-<br />
