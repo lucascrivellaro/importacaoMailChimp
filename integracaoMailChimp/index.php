@@ -242,6 +242,7 @@ fieldset.formFieldset div.formCaption2 {
 <link rel="stylesheet" href="./css/hornav.css" type="text/css" />
 <link rel="stylesheet" href="./css/extras.css" type="text/css" />
 <link rel="stylesheet" href="./css/vertnav.css" type="text/css" />
+<link rel="stylesheet" href="./css/formularios.css" type="text/css" />
 <script src="js/jquery-1.8.1.min.js" type="text/javascript" ></script>
 <script src="./js/peralta.js" type="text/javascript"></script>
 
@@ -333,16 +334,8 @@ fieldset.formFieldset div.formCaption2 {
 									$subscriber = "";
 									$merge_vars = "";
 									$email = $_POST['email'];
-									$enviarMailChimp = true;
-									$enviarEmail = false;
-									$to = "";
-									$from = "";
-									$informacao ="";
-									$fromName = "";
-									$assunto = "";
-									if($nomeLista == "representacao"){
+									if($nomeLista = "representacao"){
 										
-										include_once 'SubscriberRepresentante.php';
 										$subscriber = new SubscriberRepresentante();
 										$merge_vars = array(
 												"FNAME" => $_POST["nome"],
@@ -363,41 +356,13 @@ fieldset.formFieldset div.formCaption2 {
 												"TEMPO" => $_POST["tempoPretendeDedicar"],
 												"OBS" => $_POST["obs"]
 										);
-
-										if($_POST["investimento"] != "Ate R$ 20.000" && $_POST["investimento"] != "Ate R$ 50.000"){
-											$enviarEmail = true;
-											$to = "contato@contentsys.com.br";
-											$from = $email;
-											$fromName = $_POST["nome"];
-											$assunto = "Investidor quer investir {$_POST["investimento"]}";
-											
-											$informacao .= "\nNome: {$_POST["nome"]}\n";
-											$informacao .= "\nSobrenome: {$_POST["sobrenome"]}\n";
-											$informacao .= "\nEmpresa: {$_POST["empresa"]}\n";
-											$informacao .= "\nDDD: {$_POST["ddd"]}\n";
-											$informacao .= "\nTelefone: {$_POST["telefone"]}\n";
-											$informacao .= "\nRegiao: {$_POST["REGIAO"]}\n";
-											$informacao .= "\nRegiao Outros: {$_POST["outraRegiao"]}\n";
-											$informacao .= "\nTipo de Parceria: {$_POST["tipoParceria"]}\n";
-											$informacao .= "\nPretende investir: {$_POST["tipoParceria"]}\n";
-											$informacao .= "\nQuestao que gostaria que fosse respondida: {$_POST["questaoASerRespondida"]}\n";
-											$informacao .= "\nO que mudaria no Negócio: {$_POST["oQueMudariaNegocio"]}\n";
-											$informacao .= "\nConhecimento Em Vendas: {$_POST["oQueMudariaNegocio"]}\n";
-											$informacao .= "\nPossui Negocio: {$_POST["possuiNegocio"]}\n";
-											$informacao .= "\nTempo que Pretende se dedicar: {$_POST["tempoPretendeDedicar"]}\n";
-											$informacao .= "\nObservacoes: {$_POST["obs"]}\n";
-											
-											
-										}
 										
 									}									
 									elseif ($nomeLista == "residencial"){
-										include_once 'SubscriberKateResidencial.php';
 										$subscriber = new SubscriberKateResidencial();
 										$groups="";
 										if(!empty($_POST['razoes']))
 										{
-// 											print_r($_POST['razoes']);
 											foreach($_POST['razoes'] as $value => $val)
 											{
 										
@@ -432,7 +397,6 @@ fieldset.formFieldset div.formCaption2 {
 										
 									}
 									else if($nomeLista == "empresa"){
-										include_once 'SubscriberKateEmpresa.php';
 										$subscriber = new SubscriberKateEmpresa();
 										$merge_vars = array(
 												"FNAME" => $_POST["nome"],
@@ -447,43 +411,11 @@ fieldset.formFieldset div.formCaption2 {
 										);
 									}
 									else if($nomeLista == "assistencia"){
-										$enviarMailChimp = false;
-										$enviarEmail = true;
 										
-										$enviarEmail = true;
-										$to = "contato@contentsys.com.br";
-										$from = $email;
-										$fromName = $_POST["nome"];
-										$assunto = "Solicitacao de Assistencia Tecnica";
-										$informacao .= "\nNome: {$_POST["nome"]}\n";
-										$informacao .= "\nSobrenome: {$_POST["sobrenome"]}\n";
-										$informacao .= "\nEmpresa: {$_POST["empresa"]}\n";
-										$informacao .= "\nDDD: {$_POST["ddd"]}\n";
-										$informacao .= "\nTelefone: {$_POST["telefone"]}\n";
-										$informacao .= "\nObservacoes: {$_POST["mensagem"]}\n";
-									}
-									else{
-										$enviarMailChimp=false;
 									}
 									
-									$envio = true;
-									if($enviarMailChimp){
-										$subscriber->subscribe($email, $merge_vars);
-									}
-									if($enviarEmail){
-										include_once 'EmailSender.php';
-										$sender = new EmailSender();
-										if(!$sender->send($to, $assunto, $from, $fromName, $informacao)){
-											$envio = false;
-										}
-									}
 									
-									if($envio){
-										echo "<div class='resposta-ok'>Recebemos seus dados com sucesso. Em breve nossa equipe entrar&aacute; em contato com voc&ccedil;</div>";
-									}
-									else{
-										echo "<div class='resposta-ok'>Tivemos um erro ao tentar enviar seus dados. Por favor, tente novamente mais tarde!</div>";
-									}
+									$subscriber->subscribe($email, $merge_vars);
 									//do not remove this line
 									;
 								
@@ -497,36 +429,36 @@ fieldset.formFieldset div.formCaption2 {
 								<div class="formularios">
 									<div class="formulario">
 										<div class="title">
-											<h2>Desejo ser um representante</h2>
+											<h2 class="formulariotitulo">Desejo ser um representante</h2>
 										</div>
-										<div class="body">
+										<div class="formulariocorpo">
 											<?php include_once './formulario-representante.php';?>
 										</div>
 									</div>
 									
 									<div class="formulario">
 										<div class="title">
-											<h2>Quero um JuiceBox na minha Casa</h2>
+											<h2 class="formulariotitulo">Quero um JuiceBox na minha Casa</h2>
 										</div>
-										<div class="body">
+										<div class="formulariocorpo">
 											<?php include_once './formulario-kate-residencial.php';?>
 										</div>
 									</div>
 									
 									<div class="formulario">
 										<div class="title">
-											<h2>Quero mais saude na minha empresa</h2>
+											<h2 class="formulariotitulo">Quero mais saude na minha empresa</h2>
 										</div>
-										<div class="body">
+										<div class="formulariocorpo">
 											<?php include_once './formulario-kate-empresa.php';?>
 										</div>
 									</div>
 									
 									<div class="formulario">
 										<div class="title">
-											<h2>Assistencia Tecnica</h2>
+											<h2 class="formulariotitulo">Assistencia Tecnica</h2>
 										</div>
-										<div class="body">
+										<div class="formulariocorpo">
 											<?php include_once './formulario-assistencia-tecnica.php';?>
 										</div>
 									</div>																														
