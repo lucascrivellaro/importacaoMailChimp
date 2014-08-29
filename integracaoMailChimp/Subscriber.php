@@ -6,7 +6,7 @@ class Subscriber{
 	var $mailchimp;
 	
 	public function __construct(){
-		$this->mailchimp = new Mailchimp('d66f8504f2831a57f2f211507bdc21fc-us3');
+		$this->mailchimp = new Mailchimp('7d19a51be0ad16b123691dbab8935da8-us3');
 	}
 	
 	public function subscribe($lista, $email, $merge_vars){

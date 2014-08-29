@@ -51,7 +51,7 @@ select{
 }
 </style>
 
-<form id="frmRepresentacao">
+<form id="frmRepresentacao" method="post">
 	<label for="">Nome*</label>
 	<input type="text" id="" class="CampoForm" name='nome'/>
 	
@@ -118,13 +118,13 @@ select{
 		<option value="Entrarei apenas com meu trabalho">
 			Entrarei apenas com meu trabalho
 		</option>
-		<option value="Até R$ 20.000">
+		<option value="Ate R$ 20.000">
 			Até R$ 20.000
 		</option>
-		<option value="Até R$ 50.000">
+		<option value="Ate R$ 50.000">
 			Até R$ 50.000
 		</option>
-		<option value="Até R$ 100.000">
+		<option value="Ate R$ 100.000">
 			Até R$ 100.000
 		</option>
 		<option value="Acima de R$ 100.000">
@@ -155,7 +155,7 @@ select{
 	
 
 	<label for="">Alguma observação?</label>
-	<input type="text" id="" class="obs" />
+	<input type="text" id="" name="obs" />
 	
 	<input type="hidden" name="nomeLista" value="representacao" />
 	<input type="submit" value="Enviar Solicita&ccedil;&atilde;o">
