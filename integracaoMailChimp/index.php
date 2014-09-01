@@ -165,7 +165,8 @@ window.addEvent('load', function() {
 			});
 JCEMediaBox.init({popup:{width:"",height:"",legacy:0,lightbox:0,shadowbox:0,resize:1,icons:1,overlay:1,overlayopacity:0.8,overlaycolor:"#000000",fadespeed:500,scalespeed:500,hideobjects:0,scrolling:"fixed",close:2,labels:{'close':'Fechar','next':'Próximo','previous':'Anterior','cancel':'Cancelar','numbers':'{$current} de {$total}'},cookie_expiry:""},tooltip:{className:"tooltip",opacity:0.8,speed:150,position:"br",offsets:{x: 16, y: 16}},base:"/",imgpath:"plugins/system/jcemediabox/img",theme:"standard",themecustom:"",themepath:"plugins/system/jcemediabox/themes"});
 (function($){ window.addEvent('domready',function(){var Slider89 = new DJImageSlider({id: '89', slider_type: 2, slide_size: 960, visible_slides: 1, show_buttons: 0, show_arrows: 0, preload: 800},{auto: 0, transition: Fx.Transitions.linear, duration: 600, delay: 3600})}); })(document.id);
-  </script>
+
+	</script>
 <style>
 #userForm {
 	width: 340px;
@@ -246,6 +247,7 @@ fieldset.formFieldset div.formCaption2 {
 <script src="js/jquery-1.8.1.min.js" type="text/javascript" ></script>
 <script src="js/jquery-ui/jquery-ui.min.js" type="text/javascript" ></script>
 <script src="./js/peralta.js" type="text/javascript"></script>
+<script src=js/jquery-validation/dist/jquery.validation.min.js" type="text/javascript" ></script>
 
 
 

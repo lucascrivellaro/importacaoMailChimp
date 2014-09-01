@@ -1,26 +1,25 @@
 <form id="frmKateEmpresa" method="post" >
 
 	<label for="">Nome*</label>
-	<input type="text" id="" class="CampoForm" name='nome'/>
+	<input type="text" id="" class="CampoForm" name='nome' required/>
 	
 	<label for="">Sobrenome*</label>
-	<input type="text" id="" class="CampoForm" name='sobrenome'/>
+	<input type="text" id="" class="CampoForm" name='sobrenome' required/>
 	
 	<label for="">Email*</label>
-	<input type="text" id="" class="CampoForm" name='email'/>
-	
+	<input type="email" id="" class="CampoForm" name='email' required/>
 		
 	<label for="">Empresa*</label>
-	<input type="text" id="" class="CampoForm" name='empresa'/>
+	<input type="text" id="" class="CampoForm" name='empresa' required/>
 	
 	<label for="">Ramo*</label>
-	<input type="text" id="" class="CampoForm" name='ramo'/>
+	<input type="text" id="" class="CampoForm" name='ramo' required/>
 	
 	<label for="">DDD*</label>
-	<input type="text" id="" class="CampoForm" name='ddd'/>
+	<input type="text" id="" class="CampoForm" name='ddd' required/>
 	
 	<label for="">Telefone*</label>
-	<input type="text" id="" class="CampoForm" name='telefone'/>
+	<input type="text" id="" class="CampoForm" name='telefone' required/>
 	
 	<label for="">Qual regi&atilde;o gostaria de atuar?*</label>
 	<select id="" name='regiao'>
@@ -50,5 +49,11 @@
 
 	<input type="hidden" name="nomeLista" value="empresa" />
 	<input type="submit" value="Enviar Solicita&ccedil;&atilde;o">
+	
+	<script>
+		jQuery("#frmKateEmpresa").submit(function(){
+		jQuery("#frmKateEmpresa").validate()
+		})
+	</script>	
 	
 </form>

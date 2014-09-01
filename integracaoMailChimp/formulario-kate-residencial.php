@@ -4,28 +4,28 @@
 ?>
 <form id="frmKateResidencial" method="post" >
 	<label for="">Nome*</label>
-	<input type="text" id="" class="CampoForm" name='nome'/>
+	<input type="text" id="" class="CampoForm" name='nome' required/>
 	
 	<label for="">Sobrenome*</label>
-	<input type="text" id="" class="CampoForm" name='sobrenome'/>
+	<input type="text" id="" class="CampoForm" name='sobrenome' required/>
 		
 	<label for="">E-mail*</label>
-	<input type="text" id="" class="CampoForm" name='email'/>
+	<input type="email" id="" class="CampoForm" name='email' required/>
 	
 	<label for="">DDD*</label>
-	<input type="text" id="" class="CampoForm" name='ddd'/>
+	<input type="text" id="" class="CampoForm" name='ddd' required/>
 	
 	<label for="">Telefone*</label>
-	<input type="text" id="" class="CampoForm" name='telefone'/>
+	<input type="text" id="" class="CampoForm" name='telefone' required/>
 	
 	<label for="">Em que cidade voc&ecirc; mora?*</label>
-	<input type="text" id="" class="CampoForm" name='cidade'/>
+	<input type="text" id="" class="CampoForm" name='cidade' required/>
 	
 	<label for="">Qual bairro?*</label>
-	<input type="text" id="" class="CampoForm" name='bairro'/>
+	<input type="text" id="" class="CampoForm" name='bairro' required/>
 	
 	<label for="">Quantas pessoas vivem com voc&ecirc;?*</label>
-	<input type="text" id="" class="CampoForm" name='qtdPessoas'/>
+	<input type="text" id="" class="CampoForm" name='qtdPessoas' required/>
 	
 	<label for="">Quantas doses de suco voc&ecirc; imagina que consumiria?</label>
 	<select id="" name='qtdDoses'>
@@ -106,6 +106,12 @@
 
 	<input type="hidden" name="nomeLista" value="residencial" />
 	<input type="submit" value="Enviar Solicita&ccedil;&atilde;o">
+	
+	<script>
+		jQuery("#frmKateResidencial").submit(function(){
+		jQuery("#frmKateResidencial").validate()
+		})
+	</script>	
 
 </form>
 	

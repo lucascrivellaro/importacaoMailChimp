@@ -1,26 +1,26 @@
 <form id="frmRepresentacao" method="post">
 	
 	<label for="">Nome*</label>
-	<input type="text" id="" class="CampoForm blah" name='nome' id="nome"/>
+	<input type="text" id="" class="CampoForm blah" name='nome' id="nome" required/>
 	
 	<script type="text/javascript">
 	
 	</script>
 	
 	<label for="">Sobrenome*</label>
-	<input type="text" id="" class="CampoForm" name='sobrenome'/>
+	<input type="text" id="" class="CampoForm" name='sobrenome' required/>
 	
 	<label for="">E-mail*</label>
-	<input type="text" id="" class="CampoForm" name='email'/>
+	<input type="email" id="" class="CampoForm" name='email' required/>
 	
 	<label for="">Empresa*</label>
-	<input type="text" id="" class="CampoForm" name='empresa'/>
+	<input type="text" id="" class="CampoForm" name='empresa' required/>
 	
 	<label for="">DDD*</label>
-	<input type="text" id="" class="CampoForm" name='ddd'/>
+	<input type="text" id="" class="CampoForm" name='ddd' required/>
 	
 	<label for="">Telefone*</label>
-	<input type="text" id="" class="CampoForm" name='telefone'/>
+	<input type="text" id="" class="CampoForm" name='telefone' required/>
 	
 	<label for="">Qual Regi&atilde;o Gostaria de Atuar*</label>
 	<select id="" name='regiao'>
@@ -87,7 +87,7 @@
 	</select>
 	
 	
-	<label for="">Tem alguma questão que gostaria de ver respondida?</label>
+	<label for="">Tem alguma quest&atilde;o que gostaria de ver respondida?</label>
 	<input type="text" id="" class="CampoForm" name='questaoASerRespondida'/>
 	
 	
@@ -113,6 +113,12 @@
 	
 	<input type="hidden" name="nomeLista" value="representacao" />
 	<input type="submit" value="Enviar Solicita&ccedil;&atilde;o">
+	
+	<script>
+		jQuery("#frmRepresentacao").submit(function(){
+		jQuery("#frmRepresentacao").validate()
+		})
+	</script>
 	
 
 	
