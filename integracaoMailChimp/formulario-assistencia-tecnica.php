@@ -21,8 +21,8 @@
 	<label for="">Telefone*</label>
 	<input type="text" id="" class="CampoForm" name='telefone' required/>
 	
-	<label for="">Mensagem</label>
-	<textarea name='mensagem'></textarea><br />
+	<label for="">Mensagem*</label>
+	<textarea name='mensagem' required></textarea><br />
 
 	<input type="hidden" name="nomeLista" value="assistencia" />
 	<input type="submit" value="Enviar Solicita&ccedil;&atilde;o">
