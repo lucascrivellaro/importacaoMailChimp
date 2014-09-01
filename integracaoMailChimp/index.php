@@ -367,27 +367,27 @@ fieldset.formFieldset div.formCaption2 {
 												"OBS" => $_POST["obs"]
 										);
 
-										if($_POST["investimento"] == "Ate R$ 100.000" || $_POST["investimento"] == "Acima de R$ 100.000"){
+										if($_POST["investimento"] == "Até R$ 100.000" || $_POST["investimento"] == "Acima de R$ 100.000"){
 											$enviarEmail = true;
 											$from = $email;
 											$fromName = $_POST["nome"];
 											$to = "contato@contentsys.com.br";
-											$assunto = "Investidor interessado em investir {$_POST["investimento"]}";
+											$assunto = "{$_POST["nome"]} quer investir {$_POST["investimento"]}";
 											
-											$informacoes.= "Nome: {$_POST["nome"]}";
-											$informacoes.= "Empresa: {$_POST["empresa"]}";
-											$informacoes.= "DDD: {$_POST["ddd"]}";
-											$informacoes.= "Telefone: {$_POST["telefone"]}";
-											$informacoes.= "Regiao: {$_POST["regiao"]}";
-											$informacoes.= "Regiao (outra): {$_POST["outraRegiao"]}";
-											$informacoes.= "Tipo Parceria: {$_POST["tipoParceria"]}";
-											$informacoes.= "Investimento: {$_POST["investimento"]}";
-											$informacoes.= "Questao que gostaria que fosse respondida: {$_POST["questaoASerRespondida"]}";
-											$informacoes.= "O Que Mudaria no Negocio: {$_POST["oQueMudariaNegocio"]}";
-											$informacoes.= "Possui Conhecimento de Vendas: {$_POST["possuiConhecimentoVendas"]}";
-											$informacoes.= "Possui Negocio: {$_POST["possuiNegocio"]}";
-											$informacoes.= "Tempo Pretende Dedicar: {$_POST["tempoPretendeDedicar"]}";
-											$informacoes.= "Obs: {$_POST["obs"]}";
+											$informacoes.= "\nNome: {$_POST["nome"]}\n";
+											$informacoes.= "\nEmpresa: {$_POST["empresa"]}\n";
+											$informacoes.= "\nDDD: {$_POST["ddd"]}\n";
+											$informacoes.= "\nTelefone: {$_POST["telefone"]}\n";
+											$informacoes.= "\nRegiao: {$_POST["regiao"]}\n";
+											$informacoes.= "\nRegiao (outra): {$_POST["outraRegiao"]}\n";
+											$informacoes.= "\nTipo Parceria: {$_POST["tipoParceria"]}\n";
+											$informacoes.= "\nInvestimento: {$_POST["investimento"]}\n";
+											$informacoes.= "\nQuestao que gostaria que fosse respondida: {$_POST["questaoASerRespondida"]}\n";
+											$informacoes.= "\nO Que Mudaria no Negocio: {$_POST["oQueMudariaNegocio"]}\n";
+											$informacoes.= "\nPossui Conhecimento de Vendas: {$_POST["possuiConhecimentoVendas"]}\n";
+											$informacoes.= "\nPossui Negocio: {$_POST["possuiNegocio"]}\n";
+											$informacoes.= "\nTempo Pretende Dedicar: {$_POST["tempoPretendeDedicar"]}\n";
+											$informacoes.= "\nObs: {$_POST["obs"]}\n";
 
 										}
 										
@@ -422,10 +422,10 @@ fieldset.formFieldset div.formCaption2 {
 												"PQINTERESS" => $_POST["pqInteressa"],
 												"SUGESTAO" => $_POST["sugestao"],
 												"BENEFICIO" => $_POST["beneficio"],
-												
-												'GROUPINGS'=>array(
-													array('name'=>'Apenas três principais  para você ter o JuiceBox?', 'groups'=> $groups)
-												)
+												"Apenas três principais para você ter o JuiceBox?" => $groups
+// 												'GROUPINGS'=>array(
+// 													array('name'=>'Apenas três principais para você ter o JuiceBox?', 'groups'=> $groups)
+// 												)
 
 										);
 										
@@ -455,11 +455,11 @@ fieldset.formFieldset div.formCaption2 {
 										$assunto = "Solicitacao Assistencia Tecnica";
 										$to = "contato@contentsys.com.br";
 											
-										$informacoes.= "Nome: {$_POST["nome"]}";
-										$informacoes.= "Empresa: {$_POST["empresa"]}";
-										$informacoes.= "DDD: {$_POST["ddd"]}";
-										$informacoes.= "Telefone: {$_POST["telefone"]}";
-										$informacoes.= "Mensagem: {$_POST["mensagem"]}";
+										$informacoes.= "\nNome: {$_POST["nome"]}\n";
+										$informacoes.= "\nEmpresa: {$_POST["empresa"]}\n";
+										$informacoes.= "\nDDD: {$_POST["ddd"]}\n";
+										$informacoes.= "\nTelefone: {$_POST["telefone"]}\n";
+										$informacoes.= "\nMensagem: {$_POST["mensagem"]}\n";
 										
 									}
 									

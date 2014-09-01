@@ -25,21 +25,23 @@
 	<label for="">Qual Regi&atilde;o Gostaria de Atuar*</label>
 	<select id="" name='regiao'>
 		<option value="SP - Capital">SP - Capital</option>
-		<option value="SP - Grande SP">SP - Grande S&atilde;o Paulo</option>
+		<option value="SP - Grande São Paulo">SP - Grande S&atilde;o Paulo</option>
 		<option value="SP - Grande Campinas">SP - Grande Campinas</option>
-		<option value="SP - Outros">SP - Outros (Especificar)</option>
+		<option value="SP - Outros (especificar)">SP - Outros (Especificar)</option>
 		
 		<option value="PR - Capital">PR - Capital</option>
-		<option value="PR - Outros (Especificar)">PR - Outros (Especificar)</option>		
+		<option value="PR - Outros (especificar)">PR - Outros (Especificar)</option>		
 		
 		<option value="RJ - Capital">RJ - Capital</option>
-		<option value="RJ - Outros (Especificar)">RJ - Outros (Especificar)</option>
+		<option value="RJ - Outros (especificar)">RJ - Outros (Especificar)</option>
 		
 		<option value="MG - Capital">MG - Capital</option>
-		<option value="MG - Outros (Especificar)">MG - Outros (Especificar)</option>
+		<option value="MG - Outros (especificar)">MG - Outros (Especificar)</option>
 		
-		<option value="Nordeste - Outros (Especificar)">Nordeste - Outros (Especificar)</option>
-		<option value="Sul - Outros (Especificar)">Sul - Outros (Especificar)</option>
+		<option value="Nordeste - Outros (especificar)">Nordeste - Outros (Especificar)</option>
+		<option value="Sul - Outros (especificar)">Sul - Outros (Especificar)</option>
+		<option value="Outros (especificar)">Outros (especificar)</option>
+		
 	</select>
 	
 	<label for="">Outra Regi&atilde;o (Especifique)</label>
@@ -70,13 +72,13 @@
 		<option value="Entrarei apenas com meu trabalho">
 			Entrarei apenas com meu trabalho
 		</option>
-		<option value="Ate R$ 20.000">
+		<option value="Até R$ 20.000">
 			Até R$ 20.000
 		</option>
-		<option value="Ate R$ 50.000">
+		<option value="Até R$ 50.000">
 			Até R$ 50.000
 		</option>
-		<option value="Ate R$ 100.000">
+		<option value="Até R$ 100.000">
 			Até R$ 100.000
 		</option>
 		<option value="Acima de R$ 100.000">

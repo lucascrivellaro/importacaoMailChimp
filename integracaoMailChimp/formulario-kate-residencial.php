@@ -39,9 +39,9 @@
 	
 	<label for="">Os sucos s&atilde;o:</label>
 	<select id="" name='paraquem'>
-		<option value="So pra voce">S&oacute; pra voc&ecirc;</option>
-		<option value="So pros seus filhos">S&oacute; pros seus filhos</option>
-		<option value="Para familia">Para familia</option>
+		<option value="Só pra você">S&oacute; pra voc&ecirc;</option>
+		<option value="Só para seus filhos">S&oacute; pros seus filhos</option>
+		<option value="Para a família">Para familia</option>
 	</select>
 	
 	<label for="">Qual sua idade?</label>
@@ -62,13 +62,13 @@
 
 	<label for="">Voc&ecirc; prefere:</label>
 	<select id="" name='prefere'>
-		<option value="Investir na compra do JuiceBox e buscar as capsulas em um supermercado">
+		<option value="Investir na compra do JuiceBox e buscar as cápsulas em um supermercado">
 			Investir na compra do JuiceBox e buscar as c&aacute;psulas em um supermercado.
 		</option>
-		<option value="Alugar o JuiceBox e receber as capsulas em casa por uma pequena taxa de entrega">
+		<option value="alugar o JuiceBox e receber as cápsulas em casa por uma pequena taxa de entrega">
 			Alugar o JuiceBox e receber as c&aacute;psulas em casa por uma pequena taxa de entrega
 		</option>
-		<option value="Receber o JuiceBox em comodato (sem custos) e fazer uma assinatura de entrega de capsulas em casa">
+		<option value="receber o JuiceBox em comodato (sem custos) e fazer uma assinatura de entrega de cápsulas em casa">
 			Receber o JuiceBox em comodato (sem custos) e fazer uma assinatura de entrega de c&aacute;psulas em casa
 		</option>		
 	</select>
@@ -76,8 +76,8 @@
 	<label for="">Porque voc&ecirc; se interessa pelo suco sem conservante?</label>
 	<select id="" name='pqInteressa'>
 		<option value="Sabor">Sabor</option>
-		<option value="Produto saudavel">Produto saud&aacute;vel</option>
-		<option value="Propriedades terapeuticas">Propriedades terap&ecirc;uticas</option>
+		<option value="Produto saudável">Produto saud&aacute;vel</option>
+		<option value="Propriedades terapêuticas">Propriedades terap&ecirc;uticas</option>
 		<option value="Alergia a lactose">Alergia a lactose</option>
 		<option value="Diabetes">Diabetes</option>
 		<option value="Outros">Outros</option>				
@@ -89,9 +89,9 @@
 	<label for="">Qual maior benef&iacute;cio voc&ecirc; enxerga em Juice in Time?</label>
 	<select id="" name='beneficio'>
 		<option value="Comodidade">Comodidade</option>
-		<option value="Seguranca alimentar">Seguran&ccedil;a alimentar</option>
-		<option value="Seguranca no manuseio">Seguran&ccedil;a no manuseio</option>
-		<option value="Opcoes de frutas e bebidas">Op�oes de frutas e bebidas</option>
+		<option value="Segurança alimentar">Seguran&ccedil;a alimentar</option>
+		<option value="Segurança no manuseio">Seguran&ccedil;a no manuseio</option>
+		<option value="Opções de frutas e bebidas">Op&ccedil;oes de frutas e bebidas</option>
 		<option value="Outros">Outros</option>
 	</select>
 	

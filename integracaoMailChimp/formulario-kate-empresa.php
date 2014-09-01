@@ -25,21 +25,21 @@
 	<label for="">Qual regi&atilde;o gostaria de atuar?*</label>
 	<select id="" name='regiao'>
 		<option value="SP - Capital">SP - Capital</option>
-		<option value="SP - Grande SP">SP - Grande S&atilde;o Paulo</option>
+		<option value="SP - Grande São Paulo">SP - Grande S&atilde;o Paulo</option>
 		<option value="SP - Grande Campinas">SP - Grande Campinas</option>
 		<option value="SP - Outros">SP - Outros (Especificar)</option>
 		
 		<option value="PR - Capital">PR - Capital</option>
-		<option value="PR - Outros (Especificar)">PR - Outros (Especificar)</option>		
+		<option value="PR - Outros">PR - Outros (Especificar)</option>		
 		
 		<option value="RJ - Capital">RJ - Capital</option>
-		<option value="RJ - Outros (Especificar)">RJ - Outros (Especificar)</option>
+		<option value="RJ - Outros">RJ - Outros (Especificar)</option>
 		
 		<option value="MG - Capital">MG - Capital</option>
-		<option value="MG - Outros (Especificar)">MG - Outros (Especificar)</option>
+		<option value="MG - Outros">MG - Outros (Especificar)</option>
 		
-		<option value="Nordeste - Outros (Especificar)">Nordeste - Outros (Especificar)</option>
-		<option value="Sul - Outros (Especificar)">Sul - Outros (Especificar)</option>
+		<option value="Nordeste - Outros">Nordeste - Outros (Especificar)</option>
+		<option value="Sudeste - Outros">Sul - Outros (Especificar)</option>
 	</select>
 	
 	<label for="">Outra regi&atilde;o (Especifique)</label>
