@@ -4,7 +4,7 @@ include_once 'SubscriberForm.php';
 class SubscriberKateResidencial extends SubscriberForm{
 
 	public function getIdLista(){
-		return "62d4fe9540";
+		return "2775bd89f5";
 	}
 
 }

@@ -458,6 +458,7 @@ fieldset.formFieldset div.formCaption2 {
 										$to = "contato@contentsys.com.br";
 											
 										$informacoes.= "\nNome: {$_POST["nome"]}\n";
+										$informacoes.= "\nE-mail: {$email}\n";
 										$informacoes.= "\nEmpresa: {$_POST["empresa"]}\n";
 										$informacoes.= "\nDDD: {$_POST["ddd"]}\n";
 										$informacoes.= "\nTelefone: {$_POST["telefone"]}\n";
